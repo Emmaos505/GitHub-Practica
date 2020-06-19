@@ -47,3 +47,15 @@ agregamos al directorio temporal con git add xx // xx= nombre del archivo
 Luego hacemos el commit -m "mensaje de la nueva versión del historial"
 
 git push // con esa declaración subimos los nuevos cambios a la nube
+
+git pull // trabaja a la inversa, es decir si creamos un archivo desde gitHub, lo subimos al servidor local
+
+git fetch // nos detecta que archivo hay de diferente entre el repositorio local y el de la nube
+
+Los tags sirven como identificadores de las versiones que subimos al historial. 
+
+git tag version1.0 -m "version 1.0" // luego de tag, el nombre del tag, luego de -m una descripción del tag
+
+git log --oneline // para que puedas mostrar en pantalla este nuevo cambios
+
+git push --tags // para subir esos tags a la nube
