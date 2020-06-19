@@ -1,0 +1,49 @@
+git init // Iniciamos un repositorio. Este comando se realiza una vez por carpeta que trabajes
+
+
+
+git status   // nos pinta los archivos que no tienen seguimiento en rojo
+            // o con un signo de interrogación en rojo
+
+git add // agregamos a git los archivos que queremos hacer un seguimiento
+
+// Si ahora ejecutamos la consulta de git status nuevamente, nos aparecerá una A en index.html que significa
+// que fue agregado
+
+git commit -m // hacemos un repositorio. Con el guion m "establecemos un mensaje"
+
+git add . // el punto indica que vamos a agregar al area temporal todos los archivos de la carpeta
+
+Cuando hacemos un commit es como que sacamos una foto y guardamos la versión de los archivos como están, despues si los 
+editamos nos aparecerá una M en los archivos que editamos porque difieren de la foto que se guardó 
+
+Para guardar los nuevos cambios, debemos repetir el proceso
+
+git add + el nombre del archivo editado o el punto para agregar todos 
+
+Luego git commit -m "Mensaje nueva edición" 
+
+git log --oneline // con este comando nos muestra el historial de commit 
+
+git reset --hard xxxx // xxxx = es el numero de version que me sale en el git log, eligo a cual quiero retornar y la pongo aquí
+
+podemos volver a la otra versión, volviendo a poner git reset --hard y el codigo de la antigua versión
+
+Luego para respaldarlo en la nube, se utiliza gitHub
+
+En la pagina, vamos a crear nuevo repositorio .
+
+pegamos el link que nos proporciona en la consola, asi se estaría creando el repositorio de manera remota
+git remote add origin https://github.com/Emmaos505/GitHub-Practica.git
+
+y luego git push -u origin master
+
+ahora ya tenemos el respaldo en la nube
+
+Si editamos algunos de los archivos, deberemos 
+
+agregamos al directorio temporal con git add xx // xx= nombre del archivo
+
+Luego hacemos el commit -m "mensaje de la nueva versión del historial"
+
+git push // con esa declaración subimos los nuevos cambios a la nube
